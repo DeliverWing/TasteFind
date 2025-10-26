@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
 
-    private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=TasteFind;encrypt=true;trustServerCertificate=true";
-    private static final String USER = "Hagila\\חגילה";
-    private static final String PASSWORD = "123456";
+    private static final String URL = "jdbc:mysql://localhost:3306;databaseName=TasteFind;encrypt=true;trustServerCertificate=true";
+    private static final String USER = "root"; //"Hagila\\חגילה";
+    private static final String PASSWORD = "147963";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
